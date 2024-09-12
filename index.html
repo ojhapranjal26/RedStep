@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RedStep - Step into Style Today!</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="shortcut icon" href="image/logo.png" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Styling for the navigation bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+    }
+
+    /* Styling for the logo */
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .logo span {
+      color: red;
+    }
+
+    /* Styling for the navigation list */
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+    }
+
+    ul li a {
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      color: black;
+    }
+
+    /* Icons styling */
+    .icons i {
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown-menu li a {
+      padding: 10px 20px;
+      display: block;
+      color: black;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* Dropdown menu item hover effect */
+    .dropdown-menu li a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <nav>
+      <div class="logo">
+        <h1>Red<span>Step</span></h1>
+      </div>
+
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="Men.html"> Men</a></li>
+            <li><a href="women.html"> Women</a></li>
+            <li><a href="kids.html" target="_blank"> Kids</a></li>
+          </ul>
+        </li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Review">Review</a></li>
+        <li><a href="#Servises">Services</a></li>
+      </ul>
+
+      <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </nav>
+
+
+    <div class="main" id="Home">
+      <div class="main_content">
+        <div class="main_text">
+          <h1>RedStep<br /><span>Collection</span></h1>
+          <p>
+            Welcome to Red Step, where fashion meets comfort. Our diverse collection of shoes combines
+            cutting-edge design with superior craftsmanship to offer the perfect fit for every occasion.
+            Whether you're stepping out for a casual day or dressing up for a special event, Red Step has the perfect
+            pair to elevate your style.
+            Experience unparalleled quality and exceptional service with Red Step,
+            your Go-to destination for fashionable and comfortable footwear.
+          </p>
+        </div>
+        <div class="main_image">
+          <img src="image/shoes.png" />
+        </div>
+      </div>
+      <div class="social_icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <div class="button">
+        <a href="#">SHOP NOW</a>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+  </section>
+
+  <!--Products-->
+
+  <!--About-->
+
+  <div class="about" id="About">
+    <h1>Web<span>About</span></h1>
+
+    <div class="about_main">
+      <div class="about_image">
+        <div class="about_small_image">
+          <img src="image/red_shoes1.png" onclick="functio(this)" />
+          <img src="image/red_shoes2.png" onclick="functio(this)" />
+          <img src="image/red_shoes3.png" onclick="functio(this)" />
+          <img src="image/red_shoes4.png" onclick="functio(this)" />
+        </div>
+
+        <div class="image_contaner">
+          <img src="image/red_shoes1.png" id="imagebox" />
+        </div>
+      </div>
+
+      <div class="about_text">
+        <p>
+          RedStep Shoes, where every step matters! We are passionate about delivering stylish,
+          comfortable, and high-quality footwear that caters to every need, whether you're looking for casual sneakers,
+          elegant formal shoes, or rugged outdoor boots. Our journey began with a simple idea: to create shoes that not
+          only
+          look great but also feel amazing from the moment you put them on.
+
+          At RedStep Shoes, we believe that the perfect pair of shoes can make all the difference in your day.
+          That’s why we focus on meticulous craftsmanship, using premium materials and innovative designs to ensure that
+          our
+          footwear meets the highest standards of comfort and durability. Our collection is a blend of classic and
+          contemporary styles,
+          designed to keep you on-trend while providing unmatched support.
+
+          We take pride in our commitment to sustainability, choosing eco-friendly practices and materials
+          whenever possible to reduce our environmental footprint. Whether you're stepping out for a night on
+          the town or tackling a challenging hike, RedStep Shoes has the perfect pair to complement your lifestyle.
+
+          Our customer-centric approach means that your satisfaction is our top priority. From the ease of navigating
+          our
+          user-friendly website to the moment you unbox your new shoes, we aim to provide an exceptional shopping
+          experience.
+          Our dedicated customer support team is always here to assist you, ensuring that you find the right fit every
+          time.
+
+
+      </div>
+    </div>
+
+    <a href="#" class="about_btn">Shop Now</a>
+
+    <script>
+      function functio(small) {
+        var full = document.getElementById("imagebox");
+        full.src = small.src;
+      }
+    </script>
+  </div>
+
+  <!--Review-->
+
+  <div class="review" id="Review">
+    <h1>Customer's<span>review</span></h1>
+
+    <div class="review_box">
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/girl_dp1.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Avantika Thakur</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Da color!
+            I love my new Das!? Don’t care what people think of the color, they feel and look great with jeans!
+            Smooth leather and delivery to the US was fast!
+            Comfy!
+
+          </p>
+        </div>
+      </div>
+
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/man_dp1.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Sayuru Chahar</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Love it
+            I‘ve just received my second pair of shoes. So my only problem is to decide which one to wear.
+            Do I have to say more?
+            Btw, I’ll wear them with the green laces not only on St.Patrick‘s Day
+
+          </p>
+        </div>
+      </div>
+
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/man_dp2.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Harman Singhs</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Fantastic!
+            Just received my new boots and have them on with the insoles. Beautiful boots and very
+            comfortable. I am glad to have the ankle support but it will take a bit to break them in there because if my
+            skinny legs. So happy to have them. Plan to wear them just about every day.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review_box">
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/gir_dp3.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Kaveesha Vidurangi</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Glaubiger
+            Between my wife and me we probably own 9 or 10 pairs. By far the most comfortable shoes we have.
+            They literally fit like a glove (and are made of leather that actually reminds me of a baseball glove,
+            but softer). And people notice. Not that we care!
+
+          </p>
+        </div>
+      </div>
+
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/gir_dp2.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Tara Singh</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            Boots are best
+            Now having 7pairs of atheists shoes I find I like the boots best.
+            In fact the emerald boot is absolutely terrific,
+            the color is great and it is the softest to touch of all my shoes.
+            Just let me know of any other color boot mayed from the same leather.
+
+
+          </p>
+        </div>
+      </div>
+
+      <div class="review_card">
+        <div class="card_top">
+          <div class="profile">
+            <div class="profile_image">
+              <img src="image/man_dp3.jpg" />
+            </div>
+
+            <div class="name">
+              <strong>Abhishek Arora</strong>
+
+              <div class="like">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <p>
+            I offer a star review, two thumbs up, along with high praise.
+            Ran into the shop in Berlin, and saw some thing I fell in love with, did not make up my mind because I kept
+            seeing things
+            that also caught my eye. The shoes feel comfortable. The customer service was excellent upon my return to
+            Berlin .
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Services-->
+
+  <div class="services" id="Servises">
+    <h1>our<span>services</span></h1>
+
+    <div class="services_cards">
+      <div class="services_box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>At RedStep, we understand the excitement of receiving your new shoes. That's why we offer a
+          Fast Delivery service to ensure you get your order as quickly as possible.
+        </p>
+      </div>
+
+      <div class="services_box">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h3>10 Days Replacement</h3>
+        <p>We want you to love your new shoes! If for any reason you are not completely satisfied with your purchase,
+          we offer a hassle-free 10-day replacement policy.
+        </p>
+      </div>
+
+      <div class="services_box">
+        <i class="fa-solid fa-headset"></i>
+        <h3>24 x 7 Support</h3>
+        <p>We're here for you around the clock! Our dedicated
+          customer support team is available 24×7 to assist with any questions or concerns.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Login Form-->
+
+  <div class="login_form">
+    <div class="left">
+      <img src="image/logshoes.png" />
+    </div>
+
+    <!-- <div class="right">
+        <h1>Welcome Back!</h1>
+
+        <form action="#" method="post">
+          <p>User Name</p>
+          <div class="user">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="user"
+              placeholder="User Name"
+              class="username"
+            />
+          </div>
+
+          <p class="passworg_tag">Password</p>
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" name="password" placeholder="Password" />
+          </div>
+
+          <p class="forget">Forget Password ?</p>
+
+          <button type="submit">Login</button>
+          <div class="loging_icon">
+            <a href="#"><img src="image/google.png" /></a>
+            <a href="#"><img src="image/facebook.png" /></a>
+            <a href="#"><img src="image/twitter.png" /></a>
+          </div>
+        </form> -->
+  </div>
+  </div>
+
+  <!--Footer-->
+
+  <footer>
+    <div class="footer_main">
+      <div class="tag">
+        <h1>Contact</h1>
+        <a href="#"><i class="fa-solid fa-house"></i>Ashar It Park,Thane,Maharashtra</a>
+        <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+        <a href="#"><i class="fa-solid fa-envelope"></i>contact@redstep.in</a>
+      </div>
+
+      <div class="tag">
+        <h1>Get Help</h1>
+        <a href="#" class="center">FAQ</a>
+        <a href="#" class="center">Shipping</a>
+        <a href="#" class="center">Returns</a>
+        <a href="#" class="center">Payment Options</a>
+      </div>
+
+      <div class="tag">
+        <h1>Our Stores</h1>
+        <a href="#" class="center">Navi Mumbai</a>
+        <a href="#" class="center">Thane</a>
+        <a href="#" class="center">Pune</a>
+        <a href="#" class="center">Noida</a>
+      </div>
+
+      <div class="tag">
+        <h1>Follw Us</h1>
+        <div class="social_link">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="tag">
+        <h1>Newsletter</h1>
+        <div class="search_bar">
+          <input type="text" placeholder="You email id here" />
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
